@@ -1,0 +1,20 @@
+{% include "base.html" %}
+<style>
+body {
+  background-color: lightgrey
+}
+</style>
+
+{% block content %}
+  <h1 class="text-center">Sign Up</h1>
+  <div class="container">
+  <div class="d-flex flex-column">
+  <form method='POST'class= "shadow p-3 mb-3 bg-info rounded"> {% csrf_token %}
+    {{ form.as_p }}
+  <button type='submit' class='btn btn-outline-light btn-lg col-2 justify-content-center'>Submit</button>
+  </form>
+
+  </div>
+  </div>
+
+{% endblock %}

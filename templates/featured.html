@@ -1,0 +1,22 @@
+<div class="">
+  <h2 class='text-center'>Featured</h2>
+    <div class='row'>
+
+      {% for obj in featured_products %}
+        <div class='col'>
+          {{ forloop.counter }}
+          {% include 'card.html'  with instance=obj %}
+          {% if forloop.counter|divisibleby:4 %}
+        </div></div><div class='row'><div class='col-12'><hr/></div>
+      {% elif forloop.counter|divisibleby:4 %}
+
+        </div><div class='row'><div class='col-12'></div>
+
+      {% else %}
+        </div>
+      {% endif %}
+
+
+     {% endfor %}
+
+</div>
