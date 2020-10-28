@@ -25,7 +25,7 @@ SECRET_KEY = 'tcx!8cbyd2s#+*#zhhtsnr)no%e=5h7t-+_q!)5=c1702%%h&_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['demo-dansite.herokuapp.com']
 
 
 # Application definition
